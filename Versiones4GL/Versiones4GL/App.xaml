@@ -4,7 +4,7 @@
              xmlns:infra="clr-namespace:Versiones4GL.Infrastructure"
              x:Class="Versiones4GL.App">
     <Application.Resources>
-        <infra:InstaceLocator x:Key="Locator"/>
+        <infra:InstanceLocator x:Key="Locator"/>
     </Application.Resources>
 </Application>
 
