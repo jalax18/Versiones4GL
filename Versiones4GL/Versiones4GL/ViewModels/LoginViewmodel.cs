@@ -61,7 +61,7 @@ namespace Versiones4GL.ViewModels
         {
             this.IsEnabled = true;
             this.IsRemembered = true;
-            this.Email = "jalax@4glsp.com";
+           // this.Email = "jalax@4glsp.com";
             this.Password = "Astrid_18";
            
         }
@@ -84,23 +84,32 @@ namespace Versiones4GL.ViewModels
             if (string.IsNullOrEmpty(this.Email))
             {
                 await Application.Current.MainPage.DisplayAlert(
+                   "Error",
+                   "EmailValidation",
+                   "Accept");
+
+/*                await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
                     Languages.EmailValidation,
-                    Languages.Accept);
+                    Languages.Accept);*/
                 return;
             }
 
             if (string.IsNullOrEmpty(this.Password))
             {
                 await Application.Current.MainPage.DisplayAlert(
+                    "Error",
+                    "PasswordValidation",
+                    "Accept");
+               /* await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
                     Languages.PasswordValidation,
-                    Languages.Accept);
+                    Languages.Accept);*/
                 return;
             }
 
-            this.IsRunning = true;
-            this.IsEnabled = false;
+            //this.IsRunning = true;
+            //this.IsEnabled = false;
         }
         #endregion
 
