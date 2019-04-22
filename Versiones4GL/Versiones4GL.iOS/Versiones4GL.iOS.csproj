@@ -157,4 +157,7 @@
       <Name>Versiones4GL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logo4GL.png" />
+  </ItemGroup>
 </Project>

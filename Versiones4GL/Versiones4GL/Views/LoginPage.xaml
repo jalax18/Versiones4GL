@@ -8,10 +8,11 @@
         <ScrollView
             BindingContext="{Binding Login}">
             <StackLayout
-                Padding="5">
+                Padding="10">
                 <Image
-                    Source="onu"
-                    WidthRequest="200">
+                    Source="Logo4GL"
+                    WidthRequest="300"
+                    HorizontalOptions="Center">
                 </Image>
                 <Grid
                     Margin="10,0"
@@ -76,19 +77,19 @@
                     Orientation="Horizontal"
                     VerticalOptions="CenterAndExpand">
                     <Button
-                        BackgroundColor="Navy"
-                        BorderRadius="23"
+                        BackgroundColor="CadetBlue"
+                        BorderRadius="28"
                         Command="{Binding LoginCommand}"
-                        HeightRequest="46"
+                        HeightRequest="56"
                         HorizontalOptions="FillAndExpand"
                         IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Login"
                         TextColor="White">
                     </Button>
                     <Button
-                        BackgroundColor="Purple"
-                        BorderRadius="23"
-                        HeightRequest="46"
+                        BackgroundColor="CadetBlue"
+                        BorderRadius="28"
+                        HeightRequest="56"
                         HorizontalOptions="FillAndExpand"
                         IsEnabled="{Binding IsEnabled, Mode=TwoWay}"
                         Text="Register"
