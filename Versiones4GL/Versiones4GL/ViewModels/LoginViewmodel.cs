@@ -83,28 +83,20 @@ namespace Versiones4GL.ViewModels
         {
             if (string.IsNullOrEmpty(this.Email))
             {
-                await Application.Current.MainPage.DisplayAlert(
-                   "Error",
-                   "EmailValidation",
-                   "Accept");
-
-/*                await Application.Current.MainPage.DisplayAlert(
+               
+                    await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
                     Languages.EmailValidation,
-                    Languages.Accept);*/
+                    Languages.Accept);
                 return;
             }
 
             if (string.IsNullOrEmpty(this.Password))
             {
-                await Application.Current.MainPage.DisplayAlert(
-                    "Error",
-                    "PasswordValidation",
-                    "Accept");
-               /* await Application.Current.MainPage.DisplayAlert(
+                    await Application.Current.MainPage.DisplayAlert(
                     Languages.Error,
                     Languages.PasswordValidation,
-                    Languages.Accept);*/
+                    Languages.Accept);
                 return;
             }
 
