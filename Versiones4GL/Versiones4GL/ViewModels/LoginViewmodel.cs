@@ -61,7 +61,7 @@ namespace Versiones4GL.ViewModels
         {
             this.IsEnabled = true;
             this.IsRemembered = true;
-           // this.Email = "jalax@4glsp.com";
+            this.Email = "jalax@4glsp.com";
             this.Password = "Astrid_18";
            
         }
@@ -100,8 +100,16 @@ namespace Versiones4GL.ViewModels
                 return;
             }
 
-            //this.IsRunning = true;
-            //this.IsEnabled = false;
+
+           if (this.Email=="jalax@4glsp.com" && this.Password=="Astrid_18")
+
+            await Application.Current.MainPage.DisplayAlert(
+                   "Login ok",
+                   "The login is correct",
+                   Languages.Accept);
+            
+            this.IsRunning = false;
+            this.IsEnabled = true;
         }
         #endregion
 
