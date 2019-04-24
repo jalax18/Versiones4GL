@@ -51,9 +51,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Garum.cs" />
+    <Compile Include="Models\Maccliente.cs" />
+    <Compile Include="Models\mpecliente.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
     <Compile Include="Models\Macserver.cs" />
+    <Compile Include="Models\Xad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
