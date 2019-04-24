@@ -101,15 +101,20 @@ namespace Versiones4GL.ViewModels
             }
 
 
-           if (this.Email=="jalax@4glsp.com" && this.Password=="Astrid_18")
+            if (this.Email != "jalax@4glsp.com" || this.Password != "Astrid_18")
+            {
+                await Application.Current.MainPage.DisplayAlert(
+                    "error",
+                    "Email or Password Incorrect",
+                    "Accept");
+                return;
+            }
 
             await Application.Current.MainPage.DisplayAlert(
-                   "Login ok",
-                   "The login is correct",
-                   Languages.Accept);
-            
-            this.IsRunning = false;
-            this.IsEnabled = true;
+                  "ok",
+                  "fuck Yeahh!",
+                  "Accept");
+            return;
         }
         #endregion
 
