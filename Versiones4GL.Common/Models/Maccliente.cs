@@ -1,4 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿namespace Versiones4GL.Common.Models
+
+{
+    using Newtonsoft.Json;
 
 using System.Collections.Generic;
 

@@ -1,35 +1,40 @@
-﻿using Newtonsoft.Json;
-
-using System.Collections.Generic;
-
-using System.ComponentModel.DataAnnotations;
-
-using System.ComponentModel.DataAnnotations.Schema;
-
-
-
-public class Mpecliente
+﻿namespace Versiones4GL.Common.Models
 
 {
 
-    [Key]
+    using Newtonsoft.Json;
 
-    public int MpeclienterId { get; set; }
+    using System.Collections.Generic;
 
+    using System.ComponentModel.DataAnnotations;
 
-
-    [Required(ErrorMessage = "The field {0} is requiered.")]
-
-    [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
-
-    [Index("Macserver_Version_Index", IsUnique = true)]
-
-    public string Version { get; set; }
+    using System.ComponentModel.DataAnnotations.Schema;
 
 
 
-   // [JsonIgnore]
+    public class Mpecliente
 
-   // public virtual ICollection<Station> Stations { get; set; }
+    {
 
+        [Key]
+
+        public int MpeclienterId { get; set; }
+
+
+
+        [Required(ErrorMessage = "The field {0} is requiered.")]
+
+        [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
+
+        [Index("Macserver_Version_Index", IsUnique = true)]
+
+        public string Version { get; set; }
+
+
+
+        // [JsonIgnore]
+
+        // public virtual ICollection<Station> Stations { get; set; }
+
+    }
 }
