@@ -259,6 +259,11 @@
     <Content Include="Views\Xads\Details.cshtml" />
     <Content Include="Views\Xads\Edit.cshtml" />
     <Content Include="Views\Xads\Index.cshtml" />
+    <Content Include="Views\Macservers\Create.cshtml" />
+    <Content Include="Views\Macservers\Delete.cshtml" />
+    <Content Include="Views\Macservers\Details.cshtml" />
+    <Content Include="Views\Macservers\Edit.cshtml" />
+    <Content Include="Views\Macservers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

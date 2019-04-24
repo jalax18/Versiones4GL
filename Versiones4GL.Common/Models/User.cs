@@ -77,7 +77,7 @@
 
         [JsonIgnore]
 
-        public virtual UserType UserType { get; set; }
+        public virtual Macserver UserType { get; set; }
 
 
 

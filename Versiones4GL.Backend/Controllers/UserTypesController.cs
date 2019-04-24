@@ -29,7 +29,7 @@ namespace Versiones4GL.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UserType userType = await db.UserTypes.FindAsync(id);
+            Macserver userType = await db.UserTypes.FindAsync(id);
             if (userType == null)
             {
                 return HttpNotFound();
@@ -48,7 +48,7 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "UserTypeId,Name")] UserType userType)
+        public async Task<ActionResult> Create([Bind(Include = "UserTypeId,Name")] Macserver userType)
         {
             if (ModelState.IsValid)
             {
@@ -67,7 +67,7 @@ namespace Versiones4GL.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UserType userType = await db.UserTypes.FindAsync(id);
+            Macserver userType = await db.UserTypes.FindAsync(id);
             if (userType == null)
             {
                 return HttpNotFound();
@@ -80,7 +80,7 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "UserTypeId,Name")] UserType userType)
+        public async Task<ActionResult> Edit([Bind(Include = "UserTypeId,Name")] Macserver userType)
         {
             if (ModelState.IsValid)
             {
@@ -98,7 +98,7 @@ namespace Versiones4GL.Backend.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            UserType userType = await db.UserTypes.FindAsync(id);
+            Macserver userType = await db.UserTypes.FindAsync(id);
             if (userType == null)
             {
                 return HttpNotFound();
@@ -111,7 +111,7 @@ namespace Versiones4GL.Backend.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> DeleteConfirmed(int id)
         {
-            UserType userType = await db.UserTypes.FindAsync(id);
+            Macserver userType = await db.UserTypes.FindAsync(id);
             db.UserTypes.Remove(userType);
             await db.SaveChangesAsync();
             return RedirectToAction("Index");
