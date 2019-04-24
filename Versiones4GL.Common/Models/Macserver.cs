@@ -27,9 +27,9 @@
 
         [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
 
-        [Index("UserType_Name_Index", IsUnique = true)]
+        [Index("Macserver_Version_Index", IsUnique = true)]
 
-        public string Name { get; set; }
+        public string Version { get; set; }
 
 
 

@@ -175,6 +175,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MacserversController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\UserTypesController.cs" />
@@ -254,11 +255,6 @@
     <Content Include="Views\UserTypes\Details.cshtml" />
     <Content Include="Views\UserTypes\Edit.cshtml" />
     <Content Include="Views\UserTypes\Index.cshtml" />
-    <Content Include="Views\Xads\Create.cshtml" />
-    <Content Include="Views\Xads\Delete.cshtml" />
-    <Content Include="Views\Xads\Details.cshtml" />
-    <Content Include="Views\Xads\Edit.cshtml" />
-    <Content Include="Views\Xads\Index.cshtml" />
     <Content Include="Views\Macservers\Create.cshtml" />
     <Content Include="Views\Macservers\Delete.cshtml" />
     <Content Include="Views\Macservers\Details.cshtml" />
