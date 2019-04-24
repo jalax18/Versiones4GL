@@ -42,11 +42,7 @@
 
         public virtual UserType UserType { get; set; }
 
-        public int XadId { get; set; }
-
-        [JsonIgnore]
-
-        public virtual Xad Xad { get; set; }
+        
     }
 
 

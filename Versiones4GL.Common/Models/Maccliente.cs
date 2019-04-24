@@ -3,36 +3,37 @@
 {
     using Newtonsoft.Json;
 
-using System.Collections.Generic;
+    using System.Collections.Generic;
 
-using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations;
 
-using System.ComponentModel.DataAnnotations.Schema;
-
-
-
-public class Maccliente
-
-{
-
-    [Key]
-
-    public int MacclienterId { get; set; }
+    using System.ComponentModel.DataAnnotations.Schema;
 
 
 
-    [Required(ErrorMessage = "The field {0} is requiered.")]
+    public class Maccliente
 
-    [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
+    {
 
-    [Index("Macserver_Version_Index", IsUnique = true)]
+        [Key]
 
-    public string Version { get; set; }
+        public int MacclienterId { get; set; }
 
 
 
-   // [JsonIgnore]
+        [Required(ErrorMessage = "The field {0} is requiered.")]
 
-   // public virtual ICollection<Station> Stations { get; set; }
+        [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
 
+        [Index("Macserver_Version_Index", IsUnique = true)]
+
+        public string Version { get; set; }
+
+
+
+        // [JsonIgnore]
+
+        // public virtual ICollection<Station> Stations { get; set; }
+
+    }
 }
