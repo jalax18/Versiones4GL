@@ -1,0 +1,74 @@
+﻿@model Versiones4GL.Common.Models.Station
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Station</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Garum.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Garum.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Maccliente.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Maccliente.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Macserver.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Macserver.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Mpeccliente.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mpeccliente.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Province.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Province.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Xad.Version)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Xad.Version)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameStation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameStation)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
