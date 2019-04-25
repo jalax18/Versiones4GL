@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
@@ -17,19 +16,19 @@ namespace Versiones4GL.Backend.Controllers
         private LocalDataContext db = new LocalDataContext();
 
         // GET: Macservers
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
-            return View(await db.Macservers.ToListAsync());
+            return View(db.Macservers.ToList());
         }
 
         // GET: Macservers/Details/5
-        public async Task<ActionResult> Details(int? id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Macserver macserver = await db.Macservers.FindAsync(id);
+            Macserver macserver = db.Macservers.Find(id);
             if (macserver == null)
             {
                 return HttpNotFound();
@@ -48,12 +47,12 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "MacserverId,Version")] Macserver macserver)
+        public ActionResult Create([Bind(Include = "MacserverId,VerMacserver")] Macserver macserver)
         {
             if (ModelState.IsValid)
             {
                 db.Macservers.Add(macserver);
-                await db.SaveChangesAsync();
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -61,13 +60,13 @@ namespace Versiones4GL.Backend.Controllers
         }
 
         // GET: Macservers/Edit/5
-        public async Task<ActionResult> Edit(int? id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Macserver macserver = await db.Macservers.FindAsync(id);
+            Macserver macserver = db.Macservers.Find(id);
             if (macserver == null)
             {
                 return HttpNotFound();
@@ -80,25 +79,25 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "MacserverId,Version")] Macserver macserver)
+        public ActionResult Edit([Bind(Include = "MacserverId,VerMacserver")] Macserver macserver)
         {
             if (ModelState.IsValid)
             {
                 db.Entry(macserver).State = EntityState.Modified;
-                await db.SaveChangesAsync();
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(macserver);
         }
 
         // GET: Macservers/Delete/5
-        public async Task<ActionResult> Delete(int? id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Macserver macserver = await db.Macservers.FindAsync(id);
+            Macserver macserver = db.Macservers.Find(id);
             if (macserver == null)
             {
                 return HttpNotFound();
@@ -109,11 +108,11 @@ namespace Versiones4GL.Backend.Controllers
         // POST: Macservers/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> DeleteConfirmed(int id)
+        public ActionResult DeleteConfirmed(int id)
         {
-            Macserver macserver = await db.Macservers.FindAsync(id);
+            Macserver macserver = db.Macservers.Find(id);
             db.Macservers.Remove(macserver);
-            await db.SaveChangesAsync();
+            db.SaveChanges();
             return RedirectToAction("Index");
         }
 

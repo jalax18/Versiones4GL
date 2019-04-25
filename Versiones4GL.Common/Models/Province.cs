@@ -26,9 +26,9 @@ namespace Versiones4GL.Common.Models
 
         [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
 
-        [Index("Province_Name_Index", IsUnique = true)]
+        [Index("Province_Provincia_Index", IsUnique = true)]
 
-        public string Name { get; set; }
+        public string Provincia { get; set; }
 
 
 

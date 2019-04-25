@@ -26,9 +26,9 @@ namespace Versiones4GL.Common.Models
 
         [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
 
-        [Index("Garum_Version_Index", IsUnique = true)]
+        [Index("Garum_VerGarum_Index", IsUnique = true)]
 
-        public string Version { get; set; }
+        public string VerGarum { get; set; }
 
 
 

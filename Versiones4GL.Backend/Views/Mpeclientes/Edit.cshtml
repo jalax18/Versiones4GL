@@ -18,10 +18,10 @@
         @Html.HiddenFor(model => model.MpeclienteId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Version, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.VerMpecliente, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Version, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Version, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.VerMpecliente, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.VerMpecliente, "", new { @class = "text-danger" })
             </div>
         </div>
 

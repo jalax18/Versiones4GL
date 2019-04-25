@@ -26,9 +26,9 @@ namespace Versiones4GL.Common.Models
 
         [MaxLength(50, ErrorMessage = "The field {0} only can contains a maximum of {1} characters lenght.")]
 
-        [Index("Mpecliente_Version_Index", IsUnique = true)]
+        [Index("Mpecliente_VerMpecliente_Index", IsUnique = true)]
 
-        public string Version { get; set; }
+        public string VerMpecliente { get; set; }
 
 
 

@@ -47,7 +47,7 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GarumId,Version")] Garum garum)
+        public ActionResult Create([Bind(Include = "GarumId,VerGarum")] Garum garum)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Versiones4GL.Backend.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GarumId,Version")] Garum garum)
+        public ActionResult Edit([Bind(Include = "GarumId,VerGarum")] Garum garum)
         {
             if (ModelState.IsValid)
             {
