@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Versiones4GL.Helpers
+﻿namespace Versiones4GL.Helpers
 {
     public class Response
     {
@@ -23,6 +19,5 @@ namespace Versiones4GL.Helpers
             get;
             set;
         }
-
     }
 }
