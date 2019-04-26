@@ -15,7 +15,7 @@ namespace Versiones4GL.Backend.Controllers
     {
         private LocalDataContext db = new LocalDataContext();
 
-        // GET: Macservers
+        // GET: Macservers //
         public ActionResult Index()
         {
             return View(db.Macservers.ToList());
