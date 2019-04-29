@@ -28,23 +28,14 @@ namespace Versiones4GL.Common.Models
         public string NameStation { get; set; }
 
 
-        public int ProvinceId { get; set; }
-
-        [JsonIgnore]
-
-        public virtual Province Province { get; set; }
-
-
-
+        
         public int MacserverId { get; set; }
 
         [JsonIgnore]
 
         public virtual Macserver Macserver { get; set; }
 
-
-
-
+               
 
         public int MacclienteId { get; set; }
 

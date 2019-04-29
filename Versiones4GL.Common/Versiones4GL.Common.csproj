@@ -55,7 +55,6 @@
     <Compile Include="Models\Maccliente.cs" />
     <Compile Include="Models\Macserver.cs" />
     <Compile Include="Models\Mpecliente.cs" />
-    <Compile Include="Models\Province.cs" />
     <Compile Include="Models\Station.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\UserType.cs" />
